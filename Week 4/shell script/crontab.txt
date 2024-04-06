@@ -13,3 +13,11 @@ Command: Command to be executed
 0 12 * * * /removefile_after5days.sh
 
 The crontab executes the "removefile_after5days.sh" file every day of the year at 12:00 pm and also finds and deletes the files that are older than five days.
+
+
+crontab -e
+cromtab -l
+sudo systemctl restart crond.service
+chmod 777
+* * * * * /path/to/your/script.sh
+* * * * * /path/to/your/script.sh > /path/to/logfile 2>&1
