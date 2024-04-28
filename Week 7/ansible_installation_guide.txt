@@ -2,8 +2,8 @@
 
 sudo apt-get update
 sudo apt install software-properties-common
-sudo apt-add-repository -y ppa:ansible/ansible
-sudo apt update
+sudo apt-add-repository -y ppa:ansible/ansible (optional)
+sudo apt update (optional)
 sudo apt install ansible -y
 
 ssh-keygen
