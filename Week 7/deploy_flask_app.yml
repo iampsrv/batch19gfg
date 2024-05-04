@@ -9,8 +9,7 @@
         dest: /home/ubuntu/application
 
     - name: Install Python dependencies
-      pip:
-        requirements: /home/ubuntu/application/req.txt
+      shell: pip install flask --break-system-packages
         
     - name: Start the Flask application
-      shell: nohup python3 /home/ubuntu/application/app.py  > /dev/null 2>&1 &
+      shell: python3 /home/ubuntu/application/app.py

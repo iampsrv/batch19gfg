@@ -1,0 +1,8 @@
+.hintrc
+.terraform.lock.hcl
+.terraform/
+app/
+terraform.tfstate
+terraform.tfstate.backup
+pranjal_codecommit_credentials.csv
+batch12kp.pem
