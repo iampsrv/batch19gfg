@@ -10,26 +10,26 @@ resource "aws_instance" "web1" {
 
 variable "instance_type_mod" {
 #   default = "t2.micro"
-#   type    = string
+  type    = string
 }
 
 variable "ami_id_mod" {
 #   default = "ami-0f5ee92e2d63afc18"
-#   type    = string
+  type    = string
 }
 
 variable "name" {
 #   default = "myec2mod"
-#   type    = string
+  type    = string
 }
 
 variable "name_sg" {
 #   default = "myec2mod"
-#   type    = string
+  type    = string
 }
 
 resource "aws_security_group" "mysg" {
-  name        = var.name_sg
+  name        = "mysgtf"
   description = "Created by terraform"
 #   vpc_id      = aws_vpc.vpctf.id
 
